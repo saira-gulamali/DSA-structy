@@ -1,3 +1,7 @@
+// Big O
+// Time: O(n^2)
+// Space: O(n^2)
+
 const sumNumbersRecursive = (numbers) => {
   // todo
   if (numbers.length < 1) {

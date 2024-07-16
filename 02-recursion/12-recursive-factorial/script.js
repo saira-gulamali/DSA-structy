@@ -1,5 +1,8 @@
+// Big O
+// Time: O(n)
+// Space: O(n)
+
 const factorial = (n) => {
-  // todo
   if (n === 0) {
     return 1;
   }
