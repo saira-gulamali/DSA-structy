@@ -1,4 +1,4 @@
-# Structy - Data Structures & Algoritms Code Solutions
+# Structy - Data Structures & Algorithms Code Solutions
 
 This repo contains code solutions for the problems presented in
 https://www.structy.net/
