@@ -7,16 +7,17 @@ function pairSum(numbers, targetSum) {
   const numChecker = {};
 
   for (let i = 0; i < numbers.length; i++) {
-    const complement = targetSum - numbers[i];
-    if (numChecker[complement] !== undefined) {
-      return [numChecker[complement], i];
-    }
-
-    // alternative syntax
-    // if (complement in numChecker) {
+    const num = numbers[i];
+    const complement = targetSum - num;
+    // if (numChecker[complement] !== undefined) {
     //   return [numChecker[complement], i];
     // }
-    numChecker[numbers[i]] = i;
+
+    // alternative syntax
+    if (complement in numChecker) {
+      return [numChecker[complement], i];
+    }
+    numChecker[num] = i;
     // console.log(numChecker);
   }
 }
