@@ -5,6 +5,15 @@
 // so it continues to call fib twice n times
 // Space:O(n)
 // call stack max size is the tree depth (n) because nodes/bsae cases have to be popped off before other nodes can be added to the stack
+// fib   [0,1,1,2,3,5,8,13]
+// n      0 1 2 3 4 5 6  7
+
+// tree representation
+//                                fib(5)
+//                  fib(4)          +                fib(3)
+//      fib(3)       +    fib(2)              fib(2)   +    fib(1)
+// fib(2)   +fib(1)   fib(1) + fib(0)    fib(1)+fib(0)
+// fib(1)+fib(0)
 
 const fibonacci = (n) => {
   if (n === 0) {
